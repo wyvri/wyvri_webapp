@@ -5,7 +5,7 @@ My attempt to make a webapp for wyvri.com
 `python manage.py runserver`
 
 ## How to Deploy:
-1. Commit and push
+1. Commit and push locally
 2. Log in to pythonanywhere and pick wyvri_com
 3. Open a bash console
 4. git pull
