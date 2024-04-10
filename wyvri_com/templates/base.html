@@ -6,7 +6,11 @@
         <link href="{% static 'style.css' %}" rel="stylesheet" />
     </header>
     <body>
-        <p id="wyvern">meow</p>
+        <div class="top">
+            <nav>
+                <a href="./gallery.html">Gallery</a>
+            </nav>
+        </div>
         {% block content %}
         {% endblock %}
     </body>
