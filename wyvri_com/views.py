@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Art
 
 # Create your views here.
 
@@ -11,7 +12,7 @@ def base(request):
 
 def home(request):
     context={
-
+        'arts':Art.objects.all()
     }
 
     return render(request, 'home.html', context)

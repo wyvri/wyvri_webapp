@@ -1,2 +1,14 @@
-<!DOCTYPE html>
-woof
+{% load static %}
+
+{% include 'base.html' %}
+{% block content %}
+  <h2>Artwork Gallery</h2>
+  <div class="artwork-gallery">
+    {% for art in arts %}
+      <div class="artwork">
+        <h3>{{ art.desc }}</h3>
+        <img src="{{ art.fileName.url }}" alt="{{ art.desc }}">
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
