@@ -128,5 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/wyvri/wyvri_com/static'
+STATIC_ROOT = '/home/wyvri/wyvri_com/wyvri_com/static'
 STATIC_URL = '/static/'
