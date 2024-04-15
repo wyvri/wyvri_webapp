@@ -42,4 +42,9 @@ img {
   border: 5px solid cornflowerblue;
   width: 200px;
   display: flex;
+  transition: transform .2s;
+}
+
+img:hover {
+  transform: scale(1.2);
 }
