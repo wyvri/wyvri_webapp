@@ -28,6 +28,14 @@ nav a {
   color: cornflowerblue;
 }
 
+a:hover {
+  color:rgb(140, 169, 224)
+}
+
+footer a:hover {
+  color:rgb(214, 77, 210)
+}
+
 footer {
   color: rgb(245, 2, 237);
   padding: 10px;
