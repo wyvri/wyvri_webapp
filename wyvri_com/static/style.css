@@ -53,6 +53,11 @@ footer {
   line-height: 20px;
 }
 
+img {
+  border: 5px solid cornflowerblue;
+  width: 200px;
+}
+
 .artworks {
   display: flex;
 }
