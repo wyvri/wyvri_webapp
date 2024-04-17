@@ -12,7 +12,21 @@ def base(request):
 
 def home(request):
     context={
-        'arts':Art.objects.all()
+
     }
 
     return render(request, 'home.html', context)
+
+def aboutme(request):
+    context={
+
+    }
+
+    return render(request, 'aboutme.html', context)
+
+def gallery(request):
+    context={
+        'arts':Art.objects.all()
+    }
+
+    return render(request, 'gallery.html', context)
