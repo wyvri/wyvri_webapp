@@ -43,16 +43,19 @@ footer {
   width: 50%;
   font-family: "lucida-console", "courier-new", monospace;
   line-height: 20px;
+}
+
+.artworks {
   display: flex;
 }
 
-img {
+.artworks img {
   border: 5px solid cornflowerblue;
   width: 200px;
   transition: transform .2s;
 }
 
-img:hover {
+.artworks img:hover {
   transform: scale(1.2);
 }
 

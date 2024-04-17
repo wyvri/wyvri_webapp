@@ -1,14 +1,19 @@
 {% load static %}
 
 {% include 'base.html' %}
-{% block content %}
+<head>
+    <title>
+        website yeah!!
+    </title>
+</head>
+{% block content%}
+<body>
   <div class="top">
-    <h1 id="header">gallery.</h1>
-  </div>
-  <div class="artworks" id="wyvern">
-    {% for art in arts %}
-        <img src="{{ art.fileName.url }}" alt="{{ art.desc }}" title="{{ art.desc }}">
-        <p>{{ art.desc }}</p>
-    {% endfor %}
-  </div>
+  <h1 id="header">it's wyv time, baby.</h1>
+</div>
+  
+<section id="wyvern">
+    <img src="me.png" alt="Drawing of my persona!"></img>
+</section>
+</body>
 {% endblock %}

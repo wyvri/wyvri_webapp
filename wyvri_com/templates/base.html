@@ -8,7 +8,9 @@
     <body>
         <div class="top">
             <nav>
-                <a href="./gallery.html">Gallery</a>
+                <a href="{% url 'home' %}">Welcome</a>
+                <a href="{% url 'aboutme' %}">About Me</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
             </nav>
         </div>
         {% block content %}
