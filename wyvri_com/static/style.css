@@ -60,12 +60,15 @@ img {
 
 .artworks {
   display: flex;
+  flex-flow: wrap;
+  align-items: start;
 }
 
 .artworks img {
   border: 5px solid cornflowerblue;
   width: 200px;
   transition: transform .2s;
+  margin-top: 5px;
 }
 
 .artworks img:hover {
@@ -74,4 +77,5 @@ img {
 
 .artworks p {
   writing-mode: vertical-rl;
+  margin-top: 5px;
 }
