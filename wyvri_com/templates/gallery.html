@@ -12,8 +12,10 @@
   </div>
   <div class="artworks" id="wyvern">
     {% for art in arts %}
+    <div class="art-and-desc">
         <img src="{{ art.fileName.url }}" alt="{{ art.desc }}" title="{{ art.desc }}" style="width: {{ art.size }}px">
         <p>{{ art.desc }}</p>
+    </div>
     {% endfor %}
   </div>
 {% endblock %}

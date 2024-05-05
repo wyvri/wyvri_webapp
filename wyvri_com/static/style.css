@@ -63,18 +63,38 @@ img {
   align-items: start;
 }
 
-.artworks img {
+.art-and-desc img {
   border: 5px solid cornflowerblue;
   width: 200px;
   transition: transform .2s;
   margin-top: 5px;
+  z-index: 2;
 }
 
-.artworks img:hover {
+.art-and-desc img:hover {
   transform: scale(1.2);
+  z-index: 3;
 }
 
-.artworks p {
-  writing-mode: vertical-rl;
+.art-and-desc p {
   margin-top: 5px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  right: 10px;
+  z-index: 1;
+}
+
+.art-and-desc:hover p {
+  margin-top: 5px;
+  position: absolute;
+  top: 10px;
+  background-color: white;
+  left: 105%;
+  z-index: 10;
+}
+
+.art-and-desc {
+  position: relative;
+  margin-right: 10px;
 }
