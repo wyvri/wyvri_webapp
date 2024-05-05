@@ -7,41 +7,17 @@ __pycache__
 # Backup files # 
 *.bak 
 
-# If you are using PyCharm # 
-# User-specific stuff
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# We choose to commit media files
+# We choose to commit the database, db.sqlite3
 
-# AWS User-specific
-.idea/**/aws.xml
-
-# Generated files
-.idea/**/contentModel.xml
-
-# Sensitive or high-churn files
-.idea/**/dataSources/
-.idea/**/dataSources.ids
-.idea/**/dataSources.local.xml
-.idea/**/sqlDataSources.xml
-.idea/**/dynamic.xml
-.idea/**/uiDesigner.xml
-.idea/**/dbnavigator.xml
-
-# Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
-
-# File-based project format
-*.iws
-
-# IntelliJ
-out/
-
-# JIRA plugin
-atlassian-ide-plugin.xml
+# We choose NOT to commit ./static/ (except the admin files, they're ok)
+# ./static/ should be built in production with 'collectstatic'
+# However, wyvri_com/static absolutely SHOULD be committed 
+static/**/*.png
+static/**/*.jpg
+static/**/*.css
+# this line doesn't work. I am counting on admin stuff to not-change and already be indexed.
+!static/admin
 
 # Python # 
 *.py[cod] 
@@ -89,12 +65,6 @@ coverage.xml
 # pyenv 
 .python-version 
 
-# celery 
-celerybeat-schedule.* 
-
-# SageMath parsed files 
-*.sage.py 
-
 # Environments 
 .env 
 .venv 
@@ -110,22 +80,8 @@ venv.bak/
 # mypy 
 .mypy_cache/ 
 
-# Sublime Text # 
-*.tmlanguage.cache 
-*.tmPreferences.cache 
-*.stTheme.cache 
-*.sublime-workspace 
-*.sublime-project 
-
 # sftp configuration file 
 sftp-config.json 
-
-# Package control specific files Package 
-Control.last-run 
-Control.ca-list 
-Control.ca-bundle 
-Control.system-ca-bundle 
-GitHub.sublime-settings 
 
 # Visual Studio Code # 
 .vscode/* 
