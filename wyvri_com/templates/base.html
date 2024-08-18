@@ -1,26 +1,33 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en-us">
-    <header>
-        <title>welcome</title>
-        <link href="{% static 'style.css' %}" rel="stylesheet" />
-    </header>
-    <body>
-        <div class="top-nav">
-            <nav>
-                <a href="{% url 'home' %}">Welcome</a>
-                <a href="{% url 'aboutme' %}">About Me</a>
-                <a href="{% url 'gallery' %}">Gallery</a>
-            </nav>
-        </div>
-        {% block content %}
+
+<head>
+    <title>
+        {% block title %}
+        welcome
         {% endblock %}
-        <footer>
-            Find me:
-              <ul>
-                <li>Instagram: <a href="https://www.instagram.com/wyvri/?img_index=1">@wyvri</a></li>
-                <li>Email: hellowyvri@gmail.com</li>
-              </ul>
-          </footer>
-    </body>
+    </title>
+    <link href="{% static 'style.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="top-nav">
+        <nav>
+            <a href="{% url 'home' %}">Welcome</a>
+            <a href="{% url 'aboutme' %}">About Me</a>
+            <a href="{% url 'gallery' %}">Gallery</a>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        Find me:
+        <ul>
+            <li>Instagram: <a href="https://www.instagram.com/wyvri/?img_index=1">@wyvri</a></li>
+            <li>Email: hellowyvri@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+
 </html>

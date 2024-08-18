@@ -60,6 +60,10 @@ img {
   width: 200px;
 }
 
+#intro {
+  font-weight: bold;
+}
+
 .artworks {
   display: flex;
   flex-flow: wrap;
