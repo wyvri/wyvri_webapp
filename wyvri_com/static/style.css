@@ -14,8 +14,11 @@ body {
   padding: 10px;
 }
 
-.top nav {
-  position: fixed;
+.top-nav {
+  background-color: lavenderblush;
+  padding: 10px;
+  padding-bottom: 0px;
+  margin-bottom: -20px;
 }
 
 footer a {
