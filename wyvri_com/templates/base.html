@@ -13,15 +13,17 @@
 
 <body>
     <div class="all">
-        <div class="top-nav">
-            <nav>
-                <a href="{% url 'home' %}">Welcome</a>
-                <a href="{% url 'aboutme' %}">About Me</a>
-                <a href="{% url 'gallery' %}">Gallery</a>
-            </nav>
+        <div class="no-foot">
+            <div class="top-nav">
+                <nav>
+                    <a href="{% url 'home' %}">Welcome</a>
+                    <a href="{% url 'aboutme' %}">About Me</a>
+                    <a href="{% url 'gallery' %}">Gallery</a>
+                </nav>
+            </div>
+            {% block content %}
+            {% endblock %}
         </div>
-        {% block content %}
-        {% endblock %}
         <footer>
             Find me:
             <ul>

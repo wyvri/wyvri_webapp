@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  background-color: cornflowerblue;
 }
 
 .all {
@@ -7,6 +8,14 @@ body {
   margin: 0 auto;
   border-left:10px solid rgb(245, 2, 237);
   border-right: 10px solid rgb(245, 2, 237);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: white;
+}
+
+.no-foot {
+  flex: 1;
 }
 
 #header {
